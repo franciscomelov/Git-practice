@@ -1,2 +1,2 @@
 # Git-practice
-Repositorio de prueba para praticat Git/GitHub
+Repositorio de prueba para pratica Git/GitHub
