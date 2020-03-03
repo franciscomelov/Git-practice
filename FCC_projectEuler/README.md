@@ -1,6 +1,3 @@
 EJercicios resueltos de FreCodeCamp Project Euler
 
--Projecto 5 funciona pero toma mucho tiempo
-
-
--projectto 7 funciona pero toma mucho tiempo
+10- no pasa el test en freecodecamp porque toma mucho tiempo
