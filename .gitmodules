@@ -1,0 +1,3 @@
+[submodule "robofrineds"]
+	path = robofrineds
+	url = https://github.com/aneagoie/robofriends.git

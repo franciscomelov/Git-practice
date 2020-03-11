@@ -44,7 +44,7 @@ while(true){
 
 for(let j = 0; j<Ex.length;j++){
 
-  document.write("<strong>e</strong>",j+1," = " ,formula[j]," = ", "<strong>",Ex[j],"</strong> ", "<br>" );
+  document.write("<strong>e",j+1,"</strong> = " ,formula[j]," = ", "<strong>",Ex[j],"</strong> ", "<br>" );
   document.write("<br>") 
 }
 
