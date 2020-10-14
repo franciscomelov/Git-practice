@@ -1,0 +1,39 @@
+const currency = [
+  [100, "ONE HUNDRED"],
+  [20, "TWENTY"],
+  [10, "TEN"],
+  [5, "FIVE"],
+  [1, "ONE"],
+  [.25, "QUARTER"],
+  [.1, "DIME"],
+  [.05, "NICKEL"],
+  [.01, "PENNY"],
+]
+
+
+function checkCashRegister(price, cash, cid) {
+  var change = cash - price
+  let arr = []
+  console.log("change : ", change)
+  for (let curr of currency) {
+    if (change % curr[0] !== change) {
+      for (let item in cid) {
+        if (cid[item].indexOf(curr[1]) === 0) {
+          arr.push(cid[item])
+        }
+      }
+    }
+  }
+
+  
+  for ( let item of arr){
+console.log(item)
+console.log(change- item[1])
+  }
+
+  return { status: "INSUFFICIENT_FUNDS", change: [] }
+}
+
+console.log(
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", .25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]])
+)
