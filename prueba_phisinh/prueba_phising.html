@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackerman</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: auto;
+      padding: 100px;
+    }
+    .message {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .loading-bar {
+      width: 200px;
+      height: 20px;
+      border: 1px solid #ccc;
+      position: relative;
+      margin: auto;
+    }
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color: #4CAF50;
+      position: absolute;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">Haz sido hackeado</div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+  <script>
+    // Simulación de la carga
+    let progress = 0;
+    const progressBar = document.querySelector('.progress');
+
+    function updateProgress() {
+      if (progress < 100) {
+        progress += 1;
+        progressBar.style.width = progress + '%';
+        setTimeout(updateProgress, 50);
+      } else {
+        progressBar.style.backgroundColor = '#FF5722';
+        progressBar.style.transition = 'none';
+      }
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>
